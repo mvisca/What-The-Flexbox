@@ -32,14 +32,20 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .container {
   display:flex;
   border:10px solid goldenrod;
-  min-height:100vh;
+  /*height:100vh;*/
+  min-height: 100vh;
   /*flex-direction: row; left to right */
   /*flex-direction: column; top to bottom */
   /*flex-direction: row-reverse; rigth to left*/
   /*flex-direction: column-reverse; bottom to top*/
+  /*flex-wrap: wrap-reverse; right to left, bottom to top */
   flex-wrap: wrap;
+  /*flex-direction: column;*/
+  flex-direction: row;
 }
 
 .box {
-  width: 300px;
+  width: 33.333333333%;
+  /*padding: 10px;*/
+  border: 10px solid white;
 }
