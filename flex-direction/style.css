@@ -36,7 +36,10 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   /*flex-direction: row; left to right */
   /*flex-direction: column; top to bottom */
   /*flex-direction: row-reverse; rigth to left*/
-  flex-direction: column-reverse;
+  /*flex-direction: column-reverse; bottom to top*/
+  flex-wrap: wrap;
 }
 
-
+.box {
+  width: 300px;
+}
