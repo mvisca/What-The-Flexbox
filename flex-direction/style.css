@@ -33,9 +33,10 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   display:flex;
   border:10px solid goldenrod;
   min-height:100vh;
-  flex-wrap:wrap;
+  /*flex-direction: row; left to right */
+  /*flex-direction: column; top to bottom */
+  /*flex-direction: row-reverse; rigth to left*/
+  flex-direction: column-reverse;
 }
 
-.box {
-  width:33.3333333%;
-}
+
