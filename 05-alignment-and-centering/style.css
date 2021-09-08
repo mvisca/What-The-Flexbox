@@ -9,7 +9,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 /* Some default styles to make each box visible */
 .box {
   color:white;
-  font-size: 80px;
+  font-size: 100px;
   text-align: center;
   text-shadow:4px 4px 0 rgba(0,0,0,0.1);
   padding:10px;
@@ -30,46 +30,55 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 /* We start writing out flexbox here. The above is just page setup */
 .container {
-  border:10px solid mistyrose;
   display:flex;
+  border:10px solid mistyrose;
   height: 100vh;
-  flex-direction: column;
+
+  /*flex-wrap: wrap;*/
+
+  /*flex-direction: column;*/
   /*justify-content: flex-start;*/
-  /*justify-content: center;*/
+  /*justify-content: flex-end;*/
   /*justify-content: space-between;*/
   /*justify-content: space-around;*/
   /*justify-content: flex-end;*/
-  /*align-items:  stretch; DEFAULT*/
+
+  /*align-items: stretch; DEFAULT*/
   /*align-items: flex-end;*/
-  align-items: center;
-  /*align-items: flex-start;*/
+  align-items: flex-start;
   /*align-items: baseline;*/
+  /*align-items: space-around;*/
+
+  /*align-content: flex-end;
+  justify-content: flex-end;
+*/
 }
 
-.container div{
+.box {
+  width:  33.33%;
+}
+
+/*.box {
+  width: 27%;
+  height: 15%;
   max-height: 10vh;
   overflow: hidden;
 }
-
+*/
 .box1 {
-  width:33.333%;
+  padding-bottom:200px;
+  align-self: center;
 }
 
 .box2 {
-  font-size: 33px;
+  padding-top: 80px;
+  align-self:  stretch;
 }
 
 .box6 {
-  font-size: 22px;
-  padding-bottom: 0;
-}
-
-.box9 {
-  padding-bottom: 50px;
-  align-self:stretch;
+  padding:  22px 55px 10px 5px;
 }
 
 .box10 {
-  font-size: 222px;
+  align-self: flex-end;
 }
-
